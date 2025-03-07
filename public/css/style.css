@@ -1,0 +1,98 @@
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header, nav, footer {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Section Hero */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Section Véhicules */
+.vehicles {
+    text-align: center;
+    padding: 20px;
+}
+
+.vehicle-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.vehicle-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+}
+
+.vehicle-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Pied de page */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .vehicle-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-text {
+        width: 90%;
+    }
+}

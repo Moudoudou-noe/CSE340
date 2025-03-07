@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head') %>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <%- include('partials/header') %>
+    </header>
+    <nav>
+        <%- include('partials/navigation') %>
+    </nav>
+    <main>
+        <section class="hero">
+            <img src="/images/hero.jpg" alt="CSE Motors - Qualité et Performance">
+            <div class="hero-text">
+                <h1>Welcome to CSE Motors</h1>
+                <p>Discover our high-quality vehicles and find the one that suits you.</p>
+            </div>
+        </section>
+        <section class="vehicles">
+            <h2>Our Vehicles</h2>
+            <div class="vehicle-list">
+                <% vehicles.forEach(vehicle => { %>
+                    <div class="vehicle-card">
+                        <img src="<%= vehicle.image %>" alt="<%= vehicle.name %>">
+                        <h3><%= vehicle.name %></h3>
+                        <p><%= vehicle.description %></p>
+                    </div>
+                <% }) %>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <%- include('partials/footer') %>
+    </footer>
+</body>
+</html>

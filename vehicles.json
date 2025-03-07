@@ -1,0 +1,29 @@
+{
+    "vehicles": [
+        {
+            "name": "Berline",
+            "image": "/images/sedan.jpg",
+            "description": "Comfort and elegance for your travels."
+        },
+        {
+            "name": "SUV",
+            "image": "/images/suv.jpg",
+            "description": "Robustness and space for the whole family."
+        },
+        {
+            "name": "Camion",
+            "image": "/images/truck.jpg",
+            "description": "Power and performance for the job."
+        },
+        {
+            "name": "Coupé",
+            "image": "/images/coupe.jpg",
+            "description": "Sporty style with exceptional performance."
+        },
+        {
+            "name": "Voiture Électrique",
+            "image": "/images/electric.jpg",
+            "description": "Eco-friendly and innovative for a sustainable future."
+        }
+    ]
+}
